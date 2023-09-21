@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Flower Shop</title>
+    <style>
+       
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(157, 27, 27);
+    width: 100%;
+    height: 50px;
+}
+fieldset{
+    border-radius: 10px;
+}
+a:hover{
+    color: blue;
+}
+header {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+main {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sign-in-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    
+}
+
+.sign-in-form h2 {
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.sign-in-form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sign-in-form input[type="email"],
+.sign-in-form input[type="password"] {
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.sign-in-form input[type="email"]:focus,
+.sign-in-form input[type="password"]:focus {
+    color: blueviolet;
+}
+
+.sign-in-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+.sign-in-form button:hover {
+    background-color: blue;
+}
+
+.sign-up-link a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sign-up-link a:hover {
+    color: #4CAF50;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html" target="_blank" >Home</a>
+        <a href="services.html" target="_blank">Services</a>
+        <a href="Contactus.html" target="_blank">Contact us</a>
+        <a href="signin.html" target="_blank">Sign-in</a>
+        <a href="signup.html" target="_blank">Sign-up</a>
+        <a href="" style="margin-right: 10px;">About</a>
+    </nav>
+    <main>
+        <div class="sign-in-form">
+            <fieldset>
+                <legend>Sign-in:</legend>
+            <form action="authenticate.php" method="post">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <div class="sign-up-link">
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </main><br><br>
+
+    <footer>
+        <p>&copy; 2023 Flower Shop</p>
+    </footer>
+</body>
+</html>
